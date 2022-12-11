@@ -139,7 +139,7 @@ def main():
     import uwebsockets.client
     websocket = uwebsockets.client.connect(rtc_url)
     resp = websocket.recv()
-    #print(resp)
+    print(resp)
     websocket.close()
     gc.collect()
     
@@ -176,3 +176,4 @@ while (True):
         utime.sleep(10)
     except OSError as e:
         print("error")
+
